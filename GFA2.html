@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="GFA2.css">
+		<meta charset="UTF-8">
+		<title> Andrei Benlot's Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body> 
+		<div class="main">
+			<h1>An Epic Calculator</h1>
+			<h3>By Andrei Benlot</h3>
+	
+			<p>This page is a calculator made with HTML, CSS, and JavaScript.<br> Just input two numbers: num1 and num2 in the calculator. Then, press the operators! </p>
+			
+			<div class="calc">
+				<input type="text" id="num1" placeholder="Num 1">
+				<input type="text" id="num2" placeholder="Num 2">
+			</div>
+
+				<button onclick="sum(parseFloat(num1.value), parseFloat(num2.value))">+</button>
+				<button onclick="diff(parseFloat(num1.value), parseFloat(num2.value))">-</button>
+				<button onclick="prod(parseFloat(num1.value), parseFloat(num2.value))">*</button>
+				<button onclick="quot(parseFloat(num1.value), parseFloat(num2.value))">/</button>
+				<button onclick="mod(parseFloat(num1.value), parseFloat(num2.value))">%</button>
+
+				<p id="answer">The result will be displayed here.<p>
+		</div>
+	
+	   <script src="GFA2.js"></script>
+	</body>
+</html>
